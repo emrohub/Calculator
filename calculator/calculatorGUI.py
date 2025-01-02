@@ -70,7 +70,7 @@ button_equals = tk.Button(master=frame, text='=', padx=15,
                      pady=5, width=3, command=equal)
 button_equals.grid(row=5, column=2, pady=2)
 button_clear = tk.Button(master=frame, text='clear', padx=15,
-                     pady=5, width=3, command=lambda: myclick('clear'))
+                     pady=5, width=3, command=clear)
 button_clear.grid(row=6, column=1, pady=2)
 
 
