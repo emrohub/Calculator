@@ -1,21 +1,19 @@
 # Simple calculator application
 
-# Function to add two numbers
+# all the math functions
 def add(num1, num2):
     return num1 + num2
 
-# Function to subtract two numbers
 def subtract(num1, num2):
     return num1 - num2
 
-# Function to multiply two numbers
 def multiply(num1, num2):
     return num1 * num2
 
-# Function to divide two numbers
 def divide(num1, num2):
     return num1 / num2
 
+# Print intructions to the terminal
 print("Select operation -\n" \
       "1. Add\n" \
       "2. Subtract\n" \
