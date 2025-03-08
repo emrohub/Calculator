@@ -1,2 +1,2 @@
-# funthings
+A cute calculator
  
