@@ -12,12 +12,11 @@ frame.pack()
 entry = tk.Entry(master=frame, relief= SUNKEN, borderwidth=3, width=30)
 entry.grid(row=0, column=0, columnspan=3, ipady=2, pady=2)
 
-# the function that will be called that adds the pressed number
-# to a list that will be shown in the text box
+# adds the pressed number to a list that will be shown in the text box
 def myclick(number):
     entry.insert(tk.END, number)
 
-# The function that will be called when presing the '=' button
+# functionality for the '=' button
 def equal():
     try:
         y = str(eval(entry.get()))
@@ -26,11 +25,11 @@ def equal():
     except:
         tkinter.messagebox.showinfo("Error", "Syntax Error")
 
-# The function that will be called when pressing the 'clear' button
+# functionality for the '=' button
 def clear():
     entry.delete(0, tk.END)
 
-# all buttons
+# placement and design for all buttons
 button_1 = tk.Button(master=frame, text='1', padx=15,
                      pady=5, width=3, command=lambda: myclick(1))
 button_1.grid(row=1, column=0, pady=2)
@@ -93,6 +92,7 @@ button_equals.grid(row=5, column=2, pady=2)
 
 button_clear = tk.Button(master=frame, text='clear', padx=15,
                      pady=5, width=3, command=clear)
+
 button_clear.grid(row=6, column=1, pady=2)
 
 window.mainloop()
